@@ -231,7 +231,7 @@ func (dev device) CallMethod(method interface{}) (*http.Response, error) {
 	var endpoint string
 	switch pkg {
 		case "Device": endpoint = dev.endpoints["Device"]
-		case "Event": endpoint = dev.endpoints["Event"]
+		case "Event": endpoint = dev.endpoints["Events"]
 		case "Imaging": endpoint = dev.endpoints["Imaging"]
 		case "Media": endpoint = dev.endpoints["Media"]
 		case "PTZ": endpoint = dev.endpoints["PTZ"]
